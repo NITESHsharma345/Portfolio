@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    background: rgb(1,156,153);
+    background: linear-gradient(0deg, rgba(1,156,153,1) 7%, rgba(4,13,13,1) 85%);
+    height: 100vh;
+}
+
+   
+.main_container {
+    position: relative;
+    height: 89vh;
+    width: 68%;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 25px;
+    background-color: #28323d;
+    box-shadow: 0 0 10px #000;
+}
+.main_container  ul {
+    display: flex;
+    float:right
+
+}
+nav {
+    margin-right: 24px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-top: 0;
+}
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 248, 248);
+    margin-left: 29px;
+    margin: 20px;
+    padding: 0px 5px;
+    background-color: rgba(240, 248, 255, 0);
+    color: rgba(1,156,153,1);
+    margin: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+nav ul span {
+    margin: 2px 2px;
+    margin-block: -1px;
+    transition: bold;
+    color: white;
+}
+    
+
+li a:hover{
+    background-color: rgba(240, 248, 255, 0);
+    color: rgb(251, 252, 252);
+    margin-left: -4px;
+    cursor: pointer;
+}
+.main_container p {
+    margin: -39px;
+    margin-right: 325px;
+    margin-left: 50px;
+    padding: 9px;
+    color: aliceblue;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.small_intro {
+    background-color: rgba(240, 248, 255, 0);
+    color: aliceblue;
+    position: relative;
+    padding: 52px;
+    width: 399px;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 87px;
+    border-radius: 9px;
+    box-shadow: 0 0 46px rgb(105, 192, 230);
+}
+.small_intro span {
+    word-wrap: break-word;
+    white-space: break-spaces;
+    max-width: 100%;
+    display: BLOCK;
+}
+.small_intro span {
+    margin-bottom: 12px;
+}
+
+.small_intro .name{
+    font-family: serif;
+    font-size: 30px;
+}
+.small_intro .profession{
+    color: aqua;
+}
+.Social_media {
+    display: inline-flex;
+    margin-top: 8px;
+    font-size: 30px;
+}
+.Social_media a{
+    margin: 5px;
+    color: aliceblue;
+}
+.Social_media a:hover i{
+    color: rgb(0, 255, 255);
+    transition: 0.3s;
+}
+
+
+.small_intro button a{
+    text-decoration: none;
+    color: rgb(9, 9, 9);
+}
+.small_intro button {
+    border: 0;
+    border-radius: 20px;
+    display: block;
+    margin: 0 5px;
+    padding: 10px;
+    transition: 30ms;
+    background: aqua;
+    font-family: serif;
+}
+.small_intro button:hover{
+    border-color: white;
+}
+
+.hexagon {
+    top: 28vh;
+    left: 74%;
+    position: absolute;
+    margin: 0 auto;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 10%;
+    height: 161px;
+    box-sizing: border-box;
+    transition: all 1s;
+    border: 0.4vh solid transparent;
+    box-shadow: 0 0 62px aqua;
+}
+  
+/* Creating pseudo-class */
+.hexagon:before, .hexagon:after { 
+    content: ""; 
+    border: inherit; 
+    position: absolute; 
+    top: -0.5vh; 
+    left: -0.5vh; 
+    background-color: aqua; 
+    border-radius: inherit; 
+    height: 100%; 
+    width: 100%; 
+} 
+  
+/* Align them in such a way 
+that they form a hexagon */
+.hexagon:before { 
+    transform: rotate(60deg); 
+} 
+.hexagon:after { 
+    transform: rotate(-60deg); 
+} 
+.hexagon_container{
+    display: block;
+}
+.hexagon_container img {
+    width: 304px;
+    height: 288px;
+    top: -128px;
+    left: -109px;
+    position: absolute;
+    z-index: 2;
+}
+
+@media only screen and (max-width:800px) {
+
+    body{
+        font-family: Arial, Helvetica, sans-serif ;
+        background: #28323d;
+
+    }
+    .main_container {
+        position: relative;
+        height: 61vh;
+        width: 80%;
+        margin: 0 auto;
+        padding: 21px;
+        padding-right: 0;
+        border-radius: 0%;
+        box-shadow: none;
+    }
+    .small_intro{
+        width: 90%;
+        margin-left: 0;
+        padding: 18px;
+        height: auto;
+    }
+    .small_intro span {
+        word-wrap: break-word;
+        white-space: break-spaces;
+        max-width: 100%;
+        display: BLOCK;
+    }
+    .main_container p {
+        padding: 0px;
+        margin: -12px;
+        margin-right: 28px;
+        margin-left: -23px;
+        color: aliceblue;
+        font-size: 23px;
+        text-decoration: underline;
+    }
+    li a {
+        text-decoration: none;
+        color: rgb(255, 248, 248);
+        margin-left: 29px;
+        margin: -2px;
+        padding: 0px 5px;
+        font-size: 10px;
+    }
+    ul li {
+        list-style-type: none;
+        margin-top: -9px;
+    }
+    li a:hover{
+          color:rgba(1,156,153,1); 
+          cursor: pointer;
+      }
+      nav {
+        margin-right: 3px;
+    }
+    nav ul span {
+        margin: 2px 2px;
+        margin-block: -6px;
+        transition: bold;
+        color: white;
+    }
+    
+    .hexagon {
+        top: 7vh;
+        left: 83%;
+        position: absolute;
+        margin: 0 auto;
+        background-color: aqua;
+        border-radius: 10px;
+        width: 12%;
+        height: 63px;
+        box-sizing: border-box;
+        transition: all 1s;
+        border: 0.4vh solid transparent;
+        box-shadow: 0 0 62px aqua;
+    }
+    .hexagon_container img {
+        width: 136px;
+        height: 104px;
+        top: -44px;
+        left: -52px;
+        position: absolute;
+        z-index: 2;
+    }
+}
